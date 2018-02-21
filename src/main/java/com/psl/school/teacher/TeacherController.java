@@ -23,7 +23,7 @@ public class TeacherController {
 	}
 	
 	@RequestMapping(method=RequestMethod.GET,path="/teachers/{id}")
-	public Student getTeacherById(@PathVariable("id") int id){
+	public Teacher getTeacherById(@PathVariable("id") int id){
 		return teacherServices.getTeacherById(id);
 	}
 	
