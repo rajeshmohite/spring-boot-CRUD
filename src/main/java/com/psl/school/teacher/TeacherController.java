@@ -18,22 +18,22 @@ public class TeacherController {
 	TeacherServices teacherServices;
 	
 	@RequestMapping(method=RequestMethod.GET,path="/teachers")
-	public List<Student> getAllStudents(){
-		return teacherServices.getAllStudents();
+	public List<Student> getAllTeachers(){
+		return teacherServices.getAllTeachers();
 	}
 	
 	@RequestMapping(method=RequestMethod.GET,path="/teachers/{id}")
-	public Student getStudentById(@PathVariable("id") int id){
-		return teacherServices.getStudentById(id);
+	public Student getTeacherById(@PathVariable("id") int id){
+		return teacherServices.getTeacherById(id);
 	}
 	
 	@RequestMapping(method=RequestMethod.POST,path="/teachers")
-	public void addStudent(@RequestBody Student student){
-		teacherServices.addStudent(student);
+	public void addTeacher(@RequestBody Teacher teacher){
+		teacherServices.addTeacher(teacher);
 	}
 
 	@RequestMapping(method=RequestMethod.DELETE,path="/teachers/{id}")
-	public void deleteStudent(@PathVariable("id") int id){
-		teacherServices.deleteStudent(id);
+	public void deleteTeacher(@PathVariable("id") int id){
+		teacherServices.deleteTeacher(id);
 	}
 }
