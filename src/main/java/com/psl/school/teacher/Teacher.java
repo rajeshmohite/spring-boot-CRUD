@@ -38,5 +38,11 @@ public class Teacher {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	//This is to String
+	@Override
+ 	public String toString() {
+ 		return "Teacher [id=" + id + ", name=" + name + "]";
+ 	}
 	
 }
