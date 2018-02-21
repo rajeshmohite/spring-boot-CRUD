@@ -43,5 +43,4 @@ public class Teacher {
 	public String toString() {
 		return "Teacher [id=" + id + ", name=" + name + "]";
 	}
-	
 }
