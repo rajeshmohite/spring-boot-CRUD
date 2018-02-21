@@ -18,7 +18,7 @@ public class TeacherController {
 	TeacherServices teacherServices;
 	
 	@RequestMapping(method=RequestMethod.GET,path="/teachers")
-	public List<Student> getAllTeachers(){
+	public List<Teacher> getAllTeachers(){
 		return teacherServices.getAllTeachers();
 	}
 	
