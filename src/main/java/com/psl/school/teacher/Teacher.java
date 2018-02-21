@@ -39,10 +39,8 @@ public class Teacher {
 		this.name = name;
 	}
 
-	//This is to String
 	@Override
- 	public String toString() {
- 		return "Teacher [id=" + id + ", name=" + name + "]";
- 	}
-	
+	public String toString() {
+		return "Teacher [id=" + id + ", name=" + name + "]";
+	}
 }
